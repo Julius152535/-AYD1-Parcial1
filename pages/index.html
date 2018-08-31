@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Tablas</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -280,35 +280,16 @@
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Tablas</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Botones<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
-                            </ul>
+                            <a href="botones.html"><i class="fa fa-bar-chart-o fa-fw"></i> Botones<span class="fa arrow"></span></a>
+                            
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Grid</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Header</a>
-                        </li>
-                        
+                            <a href="Grid.html"><i class="fa fa-table fa-fw"></i> Grid</a>
+                        </li>            
                         
                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Imagenes<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
+                            <a href="imagenes.html"><i class="fa fa-files-o fa-fw"></i> Imagenes<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>
@@ -319,9 +300,119 @@
         </nav>
 
         <div id="page-wrapper">
-            
-           
-            
+            <div class="container">
+                <br>
+                <div class="jumbotron">
+                    <h1 class="display-4">Tablas de Bootstrap</h1>
+                    <p class="lead">Tablas es un componente Escencial Para mostra informacion de forma presentable</p>
+                    <hr class="my-4">
+                    <p>A continuacion Unos Ejemplos</p>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <h2><p><strong>Ejemplo 1)</strong><br> A Continuacion se muestra una tabla básica en bootstrap</p></h2>
+                <h4>Para poder obtener este estilo se necesita hacer referencia a la clase Table de Bootstrap</h4>
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+                <br>
+                <h2><p><strong>Ejemplo 2)</strong><br> Se le pueden dar diferentes estilos a las tablas dependiendo de la clase que se usa:</p></h2>
+                <br>
+                <h4>La clase Bordered para ponerle bordes a la tabla</h4>
+                <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                <h2><p><strong>Ejemplo 3)</strong><br> Se puede cambiar el comportamiento</p></h2>
+                <br>
+                <h4>La clase Hover para cambiar el comportamiento</h4>
+                <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                    </table>
+            </div>
         </div>
 
     </div>
