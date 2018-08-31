@@ -1,7 +1,38 @@
 <!DOCTYPE html>
+<html>
+<head>
+       
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+
+  <style>
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+      grid-gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    </style>
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +40,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tablas</title>
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -280,27 +311,37 @@
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Tablas</a>
                         </li>
                         <li>
-                            <a href="botones.html"><i class="fa fa-bar-chart-o fa-fw"></i> Botones<span class="fa arrow"></span></a>
-                            
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Botones<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">Flot Charts</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                            </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-
-                            <a href="Grid.html"><i class="fa fa-table fa-fw"></i> Grid</a>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Grid</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Header</a>
                         </li>
                         
                         
                         <li>
-                            <a href=""><i class="fa fa-files-o fa-fw"></i> Imagenes<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Imagenes<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="imagenes.html">Imagenes</a>
+                                    <a href="blank.html">Blank Page</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Login Page</a>
                                 </li>
                             </ul>
-                            <a href="Grid.html"><i class="fa fa-table fa-fw"></i> Grid</a>
-                        </li>            
-                        
-                  
+                            <!-- /.nav-second-level -->
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -309,119 +350,19 @@
         </nav>
 
         <div id="page-wrapper">
-            <div class="container">
-                <br>
-                <div class="jumbotron">
-                    <h1 class="display-4">Tablas de Bootstrap</h1>
-                    <p class="lead">Tablas es un componente Escencial Para mostra informacion de forma presentable</p>
-                    <hr class="my-4">
-                    <p>A continuacion Unos Ejemplos</p>
-                </div>
-            </div>
-            <br>
-            <div class="container">
-                <h2><p><strong>Ejemplo 1)</strong><br> A Continuacion se muestra una tabla básica en bootstrap</p></h2>
-                <h4>Para poder obtener este estilo se necesita hacer referencia a la clase Table de Bootstrap</h4>
-                <br>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                </table>
-                <br>
-                <h2><p><strong>Ejemplo 2)</strong><br> Se le pueden dar diferentes estilos a las tablas dependiendo de la clase que se usa:</p></h2>
-                <br>
-                <h4>La clase Bordered para ponerle bordes a la tabla</h4>
-                <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                    </table>
+            
+          <h1>grid</h1>
 
-                <h2><p><strong>Ejemplo 3)</strong><br> Se puede cambiar el comportamiento</p></h2>
-                <br>
-                <h4>La clase Hover para cambiar el comportamiento</h4>
-                <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                    </table>
-            </div>
+          <h1>ESTE GRID CONTIENE</h2>
+          
+          <div class="grid-container">
+            <div class="item1">Analisis y Disenio 1</div>
+            <div class="item2">Menu</div>
+            <div class="item3">Main</div>  
+            <div class="item4">Right</div>
+            <div class="item5">Footer</div>
+          </div>
+            
         </div>
 
     </div>
